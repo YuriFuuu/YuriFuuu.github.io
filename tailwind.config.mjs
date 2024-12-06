@@ -6,6 +6,9 @@ export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
     extend: {
+      colors: {
+        'custom-aqua': 'rgb(0, 177, 168)',
+      },
       fontFamily: {
         "sans": ["Atkinson", ...defaultTheme.fontFamily.sans],
       },

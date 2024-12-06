@@ -54,7 +54,7 @@ export const LINKS: Links = [
 // Socials
 export const SOCIALS: Socials = [
   { 
-    NAME: "Email",
+    NAME: "Email Me",
     ICON: "email", 
     TEXT: "yurifuofficial@gmail.com",
     HREF: "mailto:yurifuofficial@gmail.com",
