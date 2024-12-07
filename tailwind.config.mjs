@@ -8,7 +8,11 @@ export default {
     extend: {
       colors: {
         'custom-aqua': 'rgb(0, 177, 168)',
-      },
+        highlight: {
+          light: 'rgb(0, 140, 140)',
+          dark: 'rgb(0, 229, 207)',
+        },
+      },   
       fontFamily: {
         "sans": ["Atkinson", ...defaultTheme.fontFamily.sans],
       },

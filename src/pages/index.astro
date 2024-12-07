@@ -80,13 +80,13 @@ const projects = (await getCollection("projects"))
       <div class='relative w-full h-full flex items-center justify-center'>
         <div class='p-5 text-center'>
           <p class='animated text-lg md:text-xl lg:text-2xl font-semibold opacity-75'>
-            Hello, I am ...
+            Hello, I am
           </p>
           <p class='animated text-2xl md:text-3xl lg:text-4xl font-bold uppercase text-black dark:text-white'>
             Yuri Fu
           </p>
           <p class='animated text-sm md:text-base lg:text-lg opacity-75'>
-            A <span style="color: rgb(0, 174, 165)"">human</span> on this earth with the title <span style="color: rgb(0, 174, 165)">Data Scientist</span>.
+            A <span class="text-highlight-light dark:text-highlight-dark">human</span> on this earth with the title <span class="text-highlight-light dark:text-highlight-dark">Data Scientist</span>
           </p>
           <!-- <div id="ctaButtons" class='animated flex flex-wrap gap-4 justify-center mt-5'>
             <a href='/blog' class='py-2 px-4 rounded truncate text-xs md:text-sm lg:text-base bg-black dark:bg-white text-white dark:text-black hover:opacity-75 blend'>
@@ -107,7 +107,10 @@ const projects = (await getCollection("projects"))
       <!-- About Section -->
       <section class="animate">
         <article>
-          <p>As I mentioned, I am a <b>Data Scientist</b>, plus
+          <p>As I mentioned, I am a <b>Data Scientist</b>, plus...</p>
+          <p>Errr</p>
+          <p>To be honest, I hate to wirte self introduction. I will come back to this part later when I'm in good mood and inspriation.</p>
+          <p>:^)</p>
         </article>
       </section>
 
@@ -165,7 +168,7 @@ const projects = (await getCollection("projects"))
         <div class="space-y-4">
           <div class="flex justify-between">
             <p class="font-semibold text-black dark:text-white">
-              Project Highlight
+              Maybe you can find something interests you here
             </p>
           </div>
           <ul class="space-y-4">
@@ -182,7 +185,7 @@ const projects = (await getCollection("projects"))
             class="w-fit group flex gap-1 items-center underline decoration-[.5px] decoration-black/25 dark:decoration-white/50 hover:decoration-black dark:hover:decoration-white text-black dark:text-white underline-offset-2 blend"
           >
             <span class="text-black/75 dark:text-white/75 group-hover:text-custom-aqua group-hover:dark:text-custom-aqua blend">
-              Click here to explore more?
+              Click here to explore more
             </span>
           </a>
         </div>
@@ -239,8 +242,15 @@ const projects = (await getCollection("projects"))
               }
             </div>
           </div>
-          
       </section>
     </div>
-  </div>
+
+    <div>
+      <div class="cat fixed bottom-0 left-0 max-w-[100px] z-[9999]" id="catDiv">
+        <img src="cat.gif" alt="Cat" id="catImg" class="cursor-pointer">
+      </div>
+      <audio id="catSound" src="meow.mp3"></audio>
+      <script is:inline src="/js/cat.js"></script>
+    </div>
+    
 </PageLayout>

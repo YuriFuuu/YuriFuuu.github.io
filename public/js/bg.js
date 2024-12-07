@@ -1,18 +1,44 @@
 
+  // function generateParticles(n) {
+  //   let value = `${getRandom(2560)}px ${getRandom(2560)}px #000`;
+  //   for (let i = 2; i <= n; i++) {
+  //     value += `, ${getRandom(2560)}px ${getRandom(2560)}px #000`;
+  //   }
+  //   return value;
+  // }
+
+  // function generateStars(n) {
+  //   let value = `${getRandom(2560)}px ${getRandom(2560)}px #fff`;
+  //   for (let i = 2; i <= n; i++) {
+  //     value += `, ${getRandom(2560)}px ${getRandom(2560)}px #fff`;
+  //   }
+  //   return value;
+  // }
+
   function generateParticles(n) {
-    let value = `${getRandom(2560)}px ${getRandom(2560)}px #000`;
+    let value = `${getRandom(2560)}px ${getRandom(2560)}px ${getRandomColor1()}`;
     for (let i = 2; i <= n; i++) {
-      value += `, ${getRandom(2560)}px ${getRandom(2560)}px #000`;
+      value += `, ${getRandom(2560)}px ${getRandom(2560)}px ${getRandomColor1()}`;
+    }
+    return value;
+  }
+  
+  function generateStars(n) {
+    let value = `${getRandom(2560)}px ${getRandom(2560)}px ${getRandomColor2()}`;
+    for (let i = 2; i <= n; i++) {
+      value += `, ${getRandom(2560)}px ${getRandom(2560)}px ${getRandomColor2()}`;
     }
     return value;
   }
 
-  function generateStars(n) {
-    let value = `${getRandom(2560)}px ${getRandom(2560)}px #fff`;
-    for (let i = 2; i <= n; i++) {
-      value += `, ${getRandom(2560)}px ${getRandom(2560)}px #fff`;
-    }
-    return value;
+  function getRandomColor1() {
+    // Randomly pick a color: 80% chance for #000, 20% chance for rgb(0, 229, 207)
+    return Math.random() < 0.6 ? '#000' : 'rgb(0, 150, 150)';
+  }
+
+  function getRandomColor2() {
+    // Randomly pick a color: 80% chance for #000, 20% chance for rgb(0, 229, 207)
+    return Math.random() < 0.6 ? '#fff' : 'rgb(0, 200, 200)';
   }
 
   function getRandom(max) {
@@ -29,8 +55,8 @@
 
     if (particles1) {
       particles1.style.cssText = `
-      width: 1px;
-      height: 1px;
+      width: 1.5px;
+      height: 1.5px;
       border-radius: 50%;
       box-shadow: ${particlesSmall};
       animation: animStar 50s linear infinite;
@@ -39,8 +65,8 @@
 
     if (particles2) {
       particles2.style.cssText = `
-      width: 1.5px;
-      height: 1.5px;
+      width: 2px;
+      height: 2px;
       border-radius: 50%;
       box-shadow: ${particlesMedium};
       animation: animateParticle 100s linear infinite;
@@ -49,8 +75,8 @@
 
     if (particles3) {
       particles3.style.cssText = `
-      width: 2px;
-      height: 2px;
+      width: 3px;
+      height: 3px;
       border-radius: 50%;
       box-shadow: ${particlesLarge};
       animation: animateParticle 150s linear infinite;
@@ -76,8 +102,8 @@
 
     if (stars2) {
       stars2.style.cssText = `
-      width: 1.5px;
-      height: 1.5px;
+      width: 2px;
+      height: 2px;
       border-radius: 50%;
       box-shadow: ${starsMedium};
       animation: animateParticle 100s linear infinite;
@@ -86,8 +112,8 @@
 
     if (stars3) {
       stars3.style.cssText = `
-      width: 2px;
-      height: 2px;
+      width: 3px;
+      height: 3px;
       border-radius: 50%;
       box-shadow: ${starsLarge};
       animation: animateParticle 150s linear infinite;
