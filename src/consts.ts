@@ -14,10 +14,10 @@ export const WORK: Page = {
 }
 
 // Blog Page
-export const BLOG: Page = {
-  TITLE: "Blog",
-  DESCRIPTION: "Learn more about the process of my work",
-}
+// export const BLOG: Page = {
+//   TITLE: "Blog",
+//   DESCRIPTION: "Learn more about the process of my work",
+// }
 
 // Projects Page 
 export const PROJECTS: Page = {
@@ -41,10 +41,10 @@ export const LINKS: Links = [
     TEXT: "Work", 
     HREF: "/work", 
   },
-  { 
-    TEXT: "Blog", 
-    HREF: "/blog", 
-  },
+  // { 
+  //   TEXT: "Blog", 
+  //   HREF: "/blog", 
+  // },
   { 
     TEXT: "Projects", 
     HREF: "/projects", 

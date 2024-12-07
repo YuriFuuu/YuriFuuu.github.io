@@ -9,7 +9,7 @@ export default {
       colors: {
         'custom-aqua': 'rgb(0, 177, 168)',
         highlight: {
-          light: 'rgb(0, 140, 140)',
+          light: 'rgb(0, 150, 150)',
           dark: 'rgb(0, 229, 207)',
         },
       },   

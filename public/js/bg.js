@@ -33,7 +33,7 @@
 
   function getRandomColor1() {
     // Randomly pick a color: 80% chance for #000, 20% chance for rgb(0, 229, 207)
-    return Math.random() < 0.6 ? '#000' : 'rgb(0, 150, 150)';
+    return Math.random() < 0.8 ? '#000' : 'rgb(0, 150, 150)';
   }
 
   function getRandomColor2() {
