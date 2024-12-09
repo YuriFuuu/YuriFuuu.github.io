@@ -153,6 +153,10 @@ article img {
   @apply rotate-315;
 } */
 
+/* .card-header:hover {
+  background-image: url('/images/project-1/cover.jpg');
+} */
+
 .copy-cnt{
   @apply absolute w-full;
   top:var(--copy-btn-margin);
@@ -188,4 +192,13 @@ article img {
 .card:hover .card-inner {
   top: -2px;
   box-shadow: 0px 20px 40px rgba(61, 65, 84, 0.15);
+}
+
+.card-background {
+  opacity: 0;
+  transition: 0.6s ease-in-out;
+}
+
+.card:hover .card-background {
+  opacity: 75%;
 }

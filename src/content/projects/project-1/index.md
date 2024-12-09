@@ -1,16 +1,18 @@
 ---
-title: "Project One"
-summary: "Lorem ipsum dolor sit amet"
-date: "Mar 18 2022"
+title: "Flooding Awareness"
+summary: "A data visualization webpage to understand the impact of America’s most frequent natural disaster"
+date: "Oct 05 2024"
 draft: false
 tags:
-- Astro
+- Data Visualization
 - Javascript
-- Typescript
-- Tailwind
-- SolidJs
-demoUrl: https://astro-sphere-demo.vercel.app
-repoUrl: https://github.com/markhorn-dev/astro-sphere
+- HTML
+- CSS
+- D3.js
+- Plotly
+- Adobe After Effects
+demoUrl: https://yurifuuu.github.io/flooding-awareness/
+repoUrl: https://perci.us/dataviz/
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
+<!-- ![cover](./p1.jpg) -->
