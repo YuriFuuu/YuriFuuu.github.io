@@ -27,7 +27,7 @@ Considering about the potential for heightened enjoyment, I created the 2D anima
 
 When adding a video beneath the parent object image target, the 2D animation inadvertently begins playing in the background, regardless of whether the target is detected or not. To solve this problem, modifications need to be made to the default script within the image target database, as the part of codes shown below:
 
-```
+```c
 protected virtual void OnTrackingFound()
 {
     if (mObserverBehaviour)
@@ -47,7 +47,7 @@ protected virtual void OnTrackingLost()
 
 The simultaneous appearance of both the 2D animation and the 3D model must be prevented, as they share the same parent object. Commands are linked directly to a virtual button, specifying that the character's status can only be activated upon pressing the button:
 
-```
+```c
 public class VirtualButton : MonoBehaviour
 {
     public VirtualButtonBehaviour Vb;

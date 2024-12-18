@@ -22,7 +22,7 @@ From these SAM files, I extract the ID and the mapping coordinates. In the examp
 
 Based on this contact library, the next step is to generate the Hi-C contact matrix for chromosome X (Human, build hg18). According to our data, the length of chromosome X is 154,913,754 base pairs, and the resolution we are focusing on is 1 megabase (1,000,000 base pairs). This means we split the X chromosome into 155 segments, each 1 megabase in length. The size of our contact matrix is 155 by 155, representing interactions between these segments. Once the contact matrix is generated, we can use it to produce the desired Euclidean distance matrix.
 
-```
+```perl
 my @distance_matrix;
 for (my $i = 0; $i < $new_size; $i++) {
     for (my $j = 0; $j < $new_size; $j++) {
@@ -52,7 +52,7 @@ With the Metric Multidimensional Scaling (MDS) function from Scikit-learn, if pr
 
 <i>sklearn.manifold.MDS.html: http://scikit-learn.org/stable/modules/generated/</i>
 
-```
+```perl
 from sklearn.manifold import MDS
 import numpy as np
 
