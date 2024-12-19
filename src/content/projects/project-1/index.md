@@ -34,7 +34,7 @@ To build the web page from scratch, I used JavaScript, HTML, and CSS to ensure b
 
 Furthermore, recognizing that Perci’s users will primarily access the page through their app, it was essential to optimize the design for mobile screens. This introduced additional considerations to ensure the page is responsive and user-friendly across various devices.
 
-![draft]
+![draft](p1-1.jpg)
 
 ## Data Visualization
 
